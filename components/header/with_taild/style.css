@@ -1,0 +1,176 @@
+.content-auto {
+    content-visibility: auto;
+}
+
+::selection {
+    color: #fff;
+    background: rgba(230, 72, 92, .77);
+}
+
+header.v2 .w-100 {
+    width: 100%;
+}
+
+header.v2 .w-1224 {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header.v2 {
+    width: 100%;
+    height: auto;
+    min-height: 72px;
+    border-bottom: 1px solid #DDE1E8;
+}
+
+header.v2 nav.text-lg {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-top: 0.25rem;
+}
+
+header.v2 nav ul li {
+    position: relative;
+}
+
+header.v2 nav ul li a {
+    font-family: "Modern Era", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"!important;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+header.v2 nav ul li.border-opacity-0:active {
+    --tw-border-opacity: 5;
+    --tw-text-opacity: 1;
+    color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+header.v2 nav ul li.border-red-500:active {
+    border-color: rgb(185 28 28 / var(--tw-border-opacity));
+}
+
+@media only screen and (min-width: 1024px) {
+    header.v2 nav ul li:before,
+    header.v2 nav ul li:after {
+        position: absolute;
+        content: '';
+        z-index: 2;
+        bottom: -2px;
+        width: 30%;
+        height: 5px;
+        background-color: white;
+    }
+    header.v2 nav ul li:before {
+        left: 0;
+    }
+    header.v2 nav ul li:after {
+        right: 0;
+    }
+    .lg\:w-auto {
+        width: -webkit-fill-available !important;
+    }
+    #hide-card-mobile .hide-card-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    header.v2 .sm_flex-col {
+        flex-flow: wrap;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    header.v2 h1.mr-4 {
+        width: 100%;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    header.v2 .right-btns {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    header.v2 h1.mr-4 a img {
+        margin: 0 auto;
+    }
+    header.v2 .toggle-btn {
+        position: relative;
+        z-index: 2;
+    }
+    header.v2 nav#mobile-menu-v2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        height: 100vh;
+    }
+    header.v2 nav#mobile-menu-v2 ul.flex.items-center {
+        width: 100%;
+        align-items: flex-start;
+        margin-left: -8px;
+    }
+    header.v2 nav#mobile-menu-v2 ul.flex.items-center li {
+        width: 100%;
+        border-bottom: 1px solid #DDE1E8;
+    }
+    header.v2 nav#mobile-menu-v2 ul.flex.items-center li a {
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+    header.v2 nav#mobile-menu-v2 ul.flex.items-center li a:after {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        content: '';
+        height: auto;
+        width: 16px;
+        background: url('arrow.svg') center center no-repeat;
+    }
+    #hide-card-mobile {
+        display: block;
+    }
+    header.v2 nav#mobile-menu-v2 .card-int-mobile {
+        position: relative;
+        font-family: "Modern Era", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"!important;
+        margin-top: 25px;
+        margin-bottom: -10px;
+        border: 1px solid #DDE1E8;
+        box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+        z-index: 2;
+    }
+    header.v2 nav#mobile-menu-v2 .card-int-mobile h2 {
+        font-size: 1.05rem;
+    }
+    header.v2 nav#mobile-menu-v2 .card-int-mobile p {
+        line-height: 20px;
+    }
+    header.v2 nav#mobile-menu-v2 .hide-card-mobile {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: url('close-x.svg') center center no-repeat;
+        font-size: 30px;
+        right: 25px;
+        top: 50px;
+        z-index: 5;
+        cursor: pointer;
+    }
+    header.v2 nav#mobile-menu-v2 .hide-card-mobile:focus~.card-int-mobile {
+        display: none;
+    }
+    header.v2 nav#mobile-menu-v2 .hide-card-mobile:target+.card-int-mobile {
+        display: none;
+    }
+    header.v2 nav#mobile-menu-v2 .hide-card-mobile:focus {
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+}

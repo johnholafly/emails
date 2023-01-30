@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link data-minify="1" rel='preload' href='https://cdn-esimholafly2.pressidium.com/wp-content/cache/min/1/wp-content/themes/Holafly_v2-child/recursos/css/main.css?ver=1668087360' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+    <!--link href="https://cdn.tailwindcss.com" rel="stylesheet">
+	  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script-->
+    <!--link rel="stylesheet" href="https://tailwindcomponents.com/css/app.css?id=1d07c0e662852abf4c373299b4b2a466">
+    <script src="https://tailwindcomponents.com/js/app.js?id=16a1a06d59234ba90d5b5d7f594c27d9" defer></script-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities { .content-auto { content-visibility: auto; } header.v2 .w-100{ width: 100%; } header.v2{ width: 100%; height: auto; min-height: 72px; border-bottom: 1px solid #DDE1E8; } header.v2 nav.text-lg{ font-size: 1rem; line-height: 2rem; padding-top:
+        0.25rem; } header.v2 nav ul li{ position: relative; } header.v2 nav ul li a{ font-family: "Modern Era",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important;
+        box-sizing: border-box; font-weight: 500; } header.v2 nav ul li.border-opacity-0:active { --tw-border-opacity: 5; --tw-text-opacity: 1; color: rgb(185 28 28 / var(--tw-text-opacity)); } header.v2 nav ul li.border-red-500:active{ border-color:
+        rgb(185 28 28 / var(--tw-border-opacity)); } } @media only screen and (min-width: 1024px){ header.v2 nav ul li:before, header.v2 nav ul li:after{ position: absolute; content: ''; z-index: 2; bottom: -2px; width: 30%; height: 5px; background-color:
+        white; } header.v2 nav ul li:before{ left: 0; } header.v2 nav ul li:after{ right: 0; } } @media only screen and (max-width: 569px) { header.v2 .sm_flex-col{ flex-flow: wrap; align-items: center; padding-top: 15px; padding-bottom: 15px; } header.v2
+        h1.mr-4{ width: 100%; position: absolute; top: 15px; left: 0; right: 0; z-index: 1; } header.v2 .right-btns{ position: absolute; top: 20px; right: 20px; } header.v2 h1.mr-4 a img{ margin: 0 auto; } header.v2 .toggle-btn{ position: relative; z-index:
+        2; } header.v2 nav#mobile-menu-v2{ width: 100%; flex-direction: column; align-items: flex-start; text-align: left; } header.v2 nav#mobile-menu-v2 ul.flex.items-center{ width: 100%; align-items: flex-start; } header.v2 nav#mobile-menu-v2 ul.flex.items-center
+        li{ width: 100%; border-bottom: 1px solid #DDE1E8; } }
+    </style>
+
+</head>
+
+<body class="h-screen overflow-hidden" style="background: #edf2f7;">
+    <!--.flex.items-center.justify-center-->
+
+    <header class="header v2 sticky top-0 bg-white flex justify-flex-start px-4 py-02">
+        <!--.shadow-md .items-center -->
+        <div class="flex justify-between items-start lg:flex-row lg:items-center sm_flex-col mx-auto w-100">
+            <!-- mobile --->
+            <div class="items-center lg:order-1 toggle-btn">
+                <button data-collapse-toggle="mobile-menu-v2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+            </div>
+
+            <!-- logo -->
+            <h1 class="w-10/12 lg:w-2/12 mr-4">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/2347/1879/t/59/assets/holafly-logo.svg?v=140646997702186304541660233733">
+                </a>
+            </h1>
+
+            <!-- navigation -->
+            <nav class="w-12/12 lg:w-7/12 nav font-semibold hidden lg:block lg:w-100 text-lg w-full lg:flex lg:w-auto lg:order-2  xs:order-1 md:w-full flex flex-col space-y-4" id="mobile-menu-v2">
+                <!-- lg:flex  lg:order-1-->
+                <ul class="flex items-center flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li id="init-active" class="p-4 ml-2 mr-2 border-b-2 border-red-500 border-opacity-0 hover:border-opacity-80 hover:text-red-500 duration-200 cursor-pointer active">
+                        <a href="">Destinos</a>
+                    </li>
+                    <li class="p-4 ml-2 mr-2 border-b-2 border-red-500 border-opacity-0 hover:border-opacity-80 hover:text-red-500 duration-200 cursor-pointer">
+                        <a href="">Quiénes somos</a>
+                    </li>
+                    <li class="p-4 ml-2 mr-2 border-b-2 border-red-500 border-opacity-0 hover:border-opacity-80 hover:text-red-500 duration-200 cursor-pointer">
+                        <a href="">Ayuda</a>
+                    </li>
+                    <li class="p-4 ml-2 mr-2 border-b-2 border-red-500 border-opacity-0 hover:border-opacity-80 hover:text-red-500 duration-200 cursor-pointer">
+                        <a href="">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- buttons --->
+            <div class="w-2/12 lg:w-3/12 flex justify-end lg:order-3 right-btns">
+                <!--a href="">
+              <svg class="h-8 p-1 hover:text-green-500 duration-200" aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-9x"><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z" class=""></path></svg>
+          </a-->
+                <a href="">
+                    <svg class="h-8 p-1 hover:text-green-500 duration-200" aria-hidden="true" focusable="false" data-prefix="far" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-7x"><path fill="currentColor" d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z" class=""></path></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+
+    <script type="">
+        document.getElementById('init-active').focus();
+    </script>
+</body>
+
+</html>

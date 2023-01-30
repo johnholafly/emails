@@ -1,0 +1,1428 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  /*display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #74ABE2, #5563DE);*/
+}
+body.scrolled {
+  scroll-behavior: smooth;
+}
+/**Generals WP**/
+.site-content-fullwidth {
+  background-color: white;
+  /*img {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }*/
+}
+.site-content-fullwidth h1,
+.site-content-fullwidth h2 {
+  font-size: 45px;
+}
+.site-content-fullwidth h1.nobotmrgn,
+.site-content-fullwidth h2.nobotmrgn {
+  margin-bottom: 0;
+}
+.site-content-fullwidth h1.topmrgn,
+.site-content-fullwidth h2.topmrgn {
+  margin-top: 5%;
+}
+.site-content-fullwidth h1.backgrounded,
+.site-content-fullwidth h2.backgrounded {
+  margin-top: 5%;
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+}
+.site-content-fullwidth h1.botmargn40,
+.site-content-fullwidth h2.botmargn40 {
+  margin-bottom: 40px;
+}
+.site-content-fullwidth h2 {
+  font-size: 34px;
+}
+.site-content-fullwidth h3 {
+  font-size: 22px;
+}
+.site-content-fullwidth h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.site-content-fullwidth .bg-white {
+  background-color: white;
+}
+.site-content-fullwidth .positiontop {
+  position: relative;
+  top: 60px;
+}
+.site-content-fullwidth p {
+  margin-bottom: 1rem;
+  line-height: 1.2em;
+}
+.site-content-fullwidth .w-90 {
+  width: 90%;
+}
+.site-content-fullwidth .mx-auto {
+  margin: 0 auto;
+}
+.site-content-fullwidth .container.wided {
+  width: 100% !important;
+  max-width: 100% !important;
+  background: url("https://cdn.shopify.com/s/files/1/0102/2102/7425/files/BG_waves-instructions.png?v=1672954506") left 100px repeat-x;
+}
+.site-content-fullwidth .wider-bg {
+  width: 100%;
+  /*background: linear-gradient(#FAFAFB 0 0) top / 100% calc(30% + 50px) no-repeat;*/
+  background: linear-gradient(to top, white 0%, white 65%, #FAFAFB 65%, #FAFAFB 100%);
+}
+.site-content-fullwidth .wideline-fill h3 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.site-content-fullwidth .wideline-fill h3:before,
+.site-content-fullwidth .wideline-fill h3:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-bottom: none;
+  border-top: 1px solid #BBC1CA;
+  bottom: calc(0% - 60px);
+  width: 66%;
+}
+.site-content-fullwidth .wideline-fill h3:before {
+  right: 100%;
+  margin-right: 0;
+}
+.site-content-fullwidth .wideline-fill h3:after {
+  left: 100%;
+  margin-left: 0;
+}
+/**Template: Instructions PAGE*/
+.instructions-page {
+  /*instructions tabbed content block*/
+  /*instructions snaped content block*/
+  /*.instuctions-guidelines--*/
+  /*mobile modal content block*/
+  /*/.mobile content block--*/
+}
+.instructions-page #content-instructions-qr.active-content,
+.instructions-page #content-instructions-manual.active-content {
+  display: block;
+}
+.instructions-page #content-instructions-qr,
+.instructions-page #content-instructions-manual {
+  display: none;
+}
+.instructions-page .stepers-slider {
+  /* width: 390px; */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  overflow: hidden;
+  /*
+        a:nth-child(2){
+            color: @black__color;
+            background: @black__color;
+        }*/
+  /*@supports (scroll-snap-type) {
+            .slider > a {
+            display: none;
+            }
+        }*/
+}
+.instructions-page .stepers-slider .slides__instructions {
+  display: flex;
+  /*justify-content: center;*/
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /**Mobile support**/
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-margin-top: calc(100vh + 2.5em);
+}
+.instructions-page .stepers-slider .slides__instructions::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+  height: 10px;
+}
+.instructions-page .stepers-slider .slides__instructions::-webkit-scrollbar-thumb {
+  display: none;
+  background: black;
+  border-radius: 10px;
+}
+.instructions-page .stepers-slider .slides__instructions::-webkit-scrollbar-track {
+  display: none;
+  background: transparent;
+}
+.instructions-page .stepers-slider .slide.activatestep {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px 35px;
+  position: relative;
+}
+.instructions-page .stepers-slider .slide.activatestep .wp-block-image {
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+.instructions-page .stepers-slider .slide.activatestep .wp-block-image .size_2x {
+  display: none;
+}
+.instructions-page .stepers-slider .slide.activatestep p {
+  font-size: 16px;
+}
+.instructions-page .stepers-slider.four-slides {
+  max-width: 1600px;
+}
+.instructions-page .stepers-slider.four-slides .slides__instructions > div {
+  padding: 20px 15px;
+  width: 280px;
+  height: 230px;
+  margin-right: 15px;
+}
+.instructions-page .stepers-slider .slides__instructions > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  width: 370px;
+  height: auto;
+  min-height: 220px;
+  margin-right: 25px;
+  background: white;
+  border: 1px solid #DDE1E8;
+  box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.instructions-page .stepers-slider .slides__instructions > div:target {
+  /*   transform: scale(0.8); */
+}
+.instructions-page .stepers-slider nav {
+  padding-left: 2.6%;
+  display: block;
+}
+.instructions-page .stepers-slider nav > a {
+  display: inline-flex;
+  width: 24px;
+  height: 3px;
+  background: #DDE1E8;
+  color: #DDE1E8;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0%;
+  margin: 0 0.3rem 0.5rem 0.3rem;
+  position: relative;
+  left: -10px;
+  -webkit-tap-highlight-color: transparent;
+  -user-select: none;
+  /*&:active {
+                top: 1px;
+                background-color: @black__color;
+            }
+            &:focus {
+                background: @black__color;
+            }
+            &:target {
+                background: @black__color;
+            }*/
+  /*&:hover,*/
+}
+.instructions-page .stepers-slider nav > a:link,
+.instructions-page .stepers-slider nav > a:visited {
+  color: #DDE1E8;
+}
+.instructions-page .stepers-slider nav > a:active,
+.instructions-page .stepers-slider nav > a:focus,
+.instructions-page .stepers-slider nav > a.focus:focus,
+.instructions-page .stepers-slider nav > a:target,
+.instructions-page .stepers-slider nav > a :focus-visible,
+.instructions-page .stepers-slider nav > a.navStepAct {
+  color: #292B2E;
+  background: #292B2E;
+  border: none;
+  outline: none;
+}
+.instructions-page .stepers-slider nav > a :focus {
+  outline: none;
+  background-color: transparent;
+}
+.instructions-page .instructions__tab-wrap {
+  max-width: 1010px;
+  width: 90%;
+  margin: 0 auto;
+}
+.instructions-page .instructions__tab-wrap * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.instructions-page .instructions__tab-wrap .instruction__tabs-links {
+  /*border-bottom:1px solid #ccc;*/
+  text-align: center;
+  display: table;
+  border-collapse: separate;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  border-radius: 25px;
+  padding-top: 5px;
+  width: auto;
+  margin: 0 auto;
+}
+.instructions-page .instructions__tab-wrap .instruction__devices-links {
+  text-align: center;
+  display: table;
+  border-collapse: separate;
+  margin: 15px auto;
+  width: auto;
+}
+.instructions-page .instructions__tab-wrap .instruction__devices-links li {
+  background-color: transparent;
+}
+.instructions-page .instructions__tab-wrap .instruction__devices-links li.devicelink {
+  padding: 0;
+}
+.instructions-page .instructions__tab-wrap .instruction__devices-links li a {
+  font-size: smaller;
+  border-radius: 25px;
+  padding-top: 5px;
+  width: auto;
+  margin: 0 auto;
+  border: 1px solid #DDE1E8;
+  background-color: white;
+  border-radius: 80px;
+  padding: 4px 14px 4px;
+}
+.instructions-page .instructions__tab-wrap .instruction__devices-links li a.active {
+  border: 1px solid #292B2E;
+  background-color: #F8F8FB;
+}
+.instructions-page .instructions__tab-wrap .instruction__devices-links li a::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.instructions-page .instructions__tab-wrap .tablink,
+.instructions-page .instructions__tab-wrap .devicelink {
+  display: table-cell;
+  border-bottom: 3px solid transparent;
+  width: 50%;
+  padding: 4px 8px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+.instructions-page .instructions__tab-wrap .tablink a,
+.instructions-page .instructions__tab-wrap .devicelink a {
+  display: inline-block;
+  position: relative;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #292B2E;
+  font-weight: 500;
+  padding: 10px 35px;
+}
+.instructions-page .instructions__tab-wrap .tablink a::before,
+.instructions-page .instructions__tab-wrap .devicelink a::before {
+  position: relative;
+  content: '';
+  width: 18px;
+  height: 18px;
+  margin: 5% 0;
+  display: inline-block;
+  margin: -5px 5px 0 -10px;
+  top: 3px;
+  left: -5px;
+}
+.instructions-page .instructions__tab-wrap .tablink a.qr:before,
+.instructions-page .instructions__tab-wrap .devicelink a.qr:before {
+  background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta_qrcode.svg?v=1672242947') center center no-repeat;
+}
+.instructions-page .instructions__tab-wrap .tablink a.manual:before,
+.instructions-page .instructions__tab-wrap .devicelink a.manual:before {
+  background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta-manual.svg?v=1672242976') center center no-repeat;
+}
+.instructions-page .instructions__tab-wrap .tablink a.iphone:before,
+.instructions-page .instructions__tab-wrap .devicelink a.iphone:before {
+  background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta_iphone-apple.svg?v=1672756789') center center no-repeat;
+}
+.instructions-page .instructions__tab-wrap .tablink a.android:before,
+.instructions-page .instructions__tab-wrap .devicelink a.android:before {
+  background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta_android-logo.svg?v=1672756789') center center no-repeat;
+}
+.instructions-page .instructions__tab-wrap .tablink a span.code-text,
+.instructions-page .instructions__tab-wrap .devicelink a span.code-text {
+  display: none;
+}
+.instructions-page .instructions__tab-wrap .tablink.tab-active a,
+.instructions-page .instructions__tab-wrap .devicelink.tab-active a {
+  /*border:1px solid @black__color;*/
+  color: #292B2E;
+  background-color: white;
+  border: 1px solid #DDE1E8;
+  box-shadow: 0px 0px 0.5px rgba(66, 71, 76, 0.32), 0px 4px 8px rgba(66, 71, 76, 0.05), 0px 4px 40px #EEEEEE;
+  font-weight: 700;
+}
+.instructions-page .instructions__tab-wrap .devicelink:has(> a:empty) {
+  display: none;
+}
+.instructions-page .instructions__tab-wrap.shadowded .instruction__tabs-links {
+  background-color: #F8F8FB;
+  border-radius: 56px;
+}
+.instructions-page .instructions__tab-wrap.shadowded .instruction__tabs-links .devicelink a {
+  border-radius: 40px;
+}
+.instructions-page .instructions__tab-wrap.shadowded .instruction__tabs-links .devicelink.tab-active a {
+  border: 1px solid #DDE1E8;
+  box-shadow: 0px 0px 0.5px rgba(66, 71, 76, 0.32), 0px 4px 8px rgba(66, 71, 76, 0.05), 0px 4px 40px #EEEEEE;
+}
+.instructions-page .instructions__tab-wrap.shadowded .bullets {
+  font-size: x-small;
+  letter-spacing: 12px;
+  text-align: center;
+  margin: 5% auto 10px;
+  width: auto;
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs {
+  background-color: white;
+  padding: 10px 20px 20px;
+  border: 1px solid #292B2E;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block {
+  display: none;
+  padding-top: 20px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block.active-content {
+  display: block;
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block figure div.icon {
+  vertical-align: middle;
+  align-self: center;
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block figure figcaption {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 80%;
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block figure figcaption ul {
+  margin: 15px auto 0;
+  padding-left: 20px;
+  line-height: 25px;
+}
+.instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block figure figcaption ul li {
+  list-style: disc;
+}
+.instructions-page .instructions__guidelines-wrap {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container {
+  position: relative;
+  display: flex;
+  scroll-padding-top: 30px;
+  justify-content: center;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks {
+  display: flex;
+  position: relative;
+  text-align: left;
+  flex: 0 40%;
+  flex-direction: column;
+  margin-top: 180px;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks.actived .guidelink__step {
+  color: #DDE1E8;
+  -webkit-transition: color 150ms ease-in;
+  -ms-transition: color 150ms ease-in;
+  transition: color 150ms ease-in;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks.actived .guidelink__step.active__guide {
+  color: #292B2E;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks .guidelink__step {
+  display: block;
+  /*width: 0.85em;
+                    height: 0.85em;*/
+  outline: none;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  padding: 8px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks .guidelink__step span {
+  display: inline-block;
+  margin-right: 8%;
+  min-width: 20px;
+  border-left: 3px solid white;
+  padding: 7px 0 7px 12px;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks .guidelink__step:not(:first-child) {
+  margin-top: 0.35em;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks .guidelink__step:hover {
+  opacity: 1;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks .guidelink__step:hover span {
+  border-left: 3px solid #E6485C;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step:active,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step:focus,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step.focus:focus,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step:target,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step.active__guide {
+  color: #E6485C;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step:active span,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step:focus span,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step.focus:focus span,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step:target span,
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelink__step.active__guide span {
+  border-left: 3px solid #E6485C;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap {
+  position: relative;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap::after {
+  content: '';
+  position: absolute;
+  width: 480px;
+  height: 40%;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  background-color: #fff7d1;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines {
+  display: flex;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+  /*max-height: 550px;*/
+  max-height: calc(100vh - 7px);
+  flex: 0 70%;
+  position: relative;
+  z-index: 1;
+  -ms-overflow-style: none;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines::-webkit-scrollbar {
+  display: none;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  padding-top: 100px;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure {
+  margin-bottom: 10%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  border: 1px solid #DDE1E8;
+  box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  position: relative;
+  margin: 0 auto;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption p {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption p br {
+  margin-bottom: 15px;
+  content: '';
+  display: block;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure .guideline__alert {
+  background: #FFF8EC;
+  border: 1px solid #FFEAC0;
+  border-radius: 12px;
+  margin: 25px auto;
+  padding-left: 55px;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure .guideline__alert::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_guideline-alert.png?v=1669852334') center center no-repeat;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+  margin: 0 auto;
+  display: block;
+}
+.instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item .guideline__image {
+  display: block;
+  margin: 0 auto;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info {
+  align-items: stretch !important;
+  display: flex;
+  padding-top: 15px;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info h4 {
+  font-size: 20px;
+  font-family: 500;
+  line-height: 28px;
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 12px;
+  padding-right: 10px;
+  color: #292B2E;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info p a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info p a:hover {
+  color: #E6485C;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info .is-layout-flow:nth-child(2) h4 {
+  padding-right: 50px;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info .wp-block-column {
+  display: flex;
+  height: auto;
+  align-self: stretch;
+  flex-direction: column;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info .wp-block-column.border-column {
+  margin: 0;
+}
+.instructions-page .instructions__guidelines-wrap .how-it-works__info .border-column {
+  border: 1px solid #DDE1E8 !important;
+  box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+  border-radius: 16px !important;
+}
+.instructions-page #mobile-info .show__info-mobile {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.instructions-page #mobile-info .show__info-mobile .info-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  flex-direction: column-reverse;
+}
+.instructions-page #mobile-info .show__info-mobile.tween__mobile-content {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  /*.info-content{
+                    visibility: visible;
+                    opacity: 1;
+                }*/
+}
+.instructions-page #mobile-info .show__info-mobile .info-content {
+  transform: translate(-50%, -50%);
+  width: 88%;
+  border-radius: 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(41, 43, 46, 0.2);
+}
+.instructions-page #mobile-info .show__info-mobile .info-content figure {
+  text-align: center;
+}
+.instructions-page #mobile-info .show__info-mobile .info-content figure img {
+  transform: scale(1.1);
+  margin: 10% auto;
+}
+.instructions-page #mobile-info .show__info-mobile .info-content figure figcaption {
+  text-align: left;
+  margin: 5px;
+}
+.instructions-page #mobile-info .show__info-mobile .info-content figure figcaption ul {
+  padding-left: 25px;
+}
+.instructions-page #mobile-info .show__info-mobile .info-content figure figcaption ul li {
+  list-style: disc;
+  margin: 5px 0;
+}
+.instructions-page #mobile-info .show__info-mobile .info-content h4 {
+  text-align: center;
+}
+.instructions-page #mobile-info .button__info-close {
+  display: none;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.instructions-page #mobile-info .button__info-close:hover {
+  background-color: darkgray;
+}
+.instructions-page #mobile-info .button__info-accept {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 20px 30px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 88%;
+  margin: 15px auto 20px;
+  color: #292B2E;
+  background-color: #48EC86;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.instructions-page .button__info-mobile {
+  display: none;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 15px 0px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+  margin: 40px auto -20px;
+  border: 1px solid #DDE1E8;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.instructions-page .button__info-mobile.active {
+  display: block;
+}
+.instructions-page .button__info-mobile span {
+  font-weight: 500;
+  position: relative;
+}
+.instructions-page .button__info-mobile span::before {
+  position: absolute;
+  content: '';
+  left: -26px;
+  top: 1px;
+  background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta_info-mobile.svg?v=1671204434') center center no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: auto;
+  text-align: left;
+}
+/*Style Buttons & Banners After Instructions Layout*/
+.banner__message-activation {
+  text-align: center;
+}
+.banner__message-activation h3.has-text-align-center {
+  font-size: 28px;
+}
+.banner__message-activation.green-bg {
+  margin-top: 100px;
+  background-color: #ECFCF4;
+  width: 100%;
+  padding: 5% 7% 5%;
+}
+.banner__message-activation .button__cta-blank {
+  margin: 35px auto 20px;
+}
+.button__cta-blank {
+  background: white;
+  padding: 20px 30px;
+  font: inherit;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto 20px;
+  color: #292B2E;
+  border-radius: 12px;
+  border: 1px solid #DDE1E8;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.instructions__btn-scroll_down {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background: transparent url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconscroll_double_arrow_down.png?v=1670969102') center center no-repeat;
+  -webkit-animation: tween_btn_scroll 2.44s ease-in-out infinite;
+  -moz-animation: tween_btn_scroll 2.44s ease-in-out infinite;
+  animation: tween_btn_scroll 2.44s ease-in-out infinite;
+}
+@-webkit-keyframes tween_btn_scroll {
+  0% {
+    -webkit-transform: translate(0, -10px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes tween_btn_scroll {
+  0% {
+    -moz-transform: translate(0, -10px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    -moz-transform: translate(0, 10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+@keyframes tween_btn_scroll {
+  0% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+/*Banners*/
+/*.site-main{*/
+.instruction-banner {
+  max-width: 1010px;
+  width: 90%;
+  padding-top: 20px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: white;
+  padding: 10px 20px 20px;
+  border: 1px solid #292B2E;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+.instruction-banner.active-content {
+  display: block;
+}
+.instruction-banner figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.instruction-banner figure div.icon {
+  vertical-align: middle;
+  align-self: center;
+}
+.instruction-banner figure figcaption {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 80%;
+  margin-top: 20px;
+}
+.instruction-banner figure figcaption ul {
+  margin: 15px auto 0;
+  padding-left: 20px;
+  line-height: 25px;
+}
+.instruction-banner figure figcaption ul li {
+  margin-top: 5px;
+  list-style: disc;
+}
+.instruction-banner .button__cta-blank {
+  margin: 10px;
+  position: relative;
+}
+.instruction-banner .button__cta-blank.download span:after {
+  background: url(https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta_download.png?v=1670342049) center center no-repeat;
+  position: absolute;
+  content: '';
+  right: 26px;
+  top: auto;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  text-align: left;
+}
+/*}*/
+/*Figures Steps Intructions*/
+.column__figure-instruction .figure-instruction {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.column__figure-instruction .figure-instruction .figure-isntruction-cap {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
+}
+.column__figure-instruction .figure-instruction .figure-isntruction-cap::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #DDE1E8;
+  box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  z-index: 0;
+}
+.column__figure-instruction .figure-instruction .figure-isntruction-cap h5 {
+  display: block;
+  text-align: center;
+  margin: 25px auto 10px;
+}
+.column__figure-instruction .figure-instruction .figure-img {
+  position: relative;
+  margin: 10px auto;
+  z-index: 2;
+}
+/*Mesagge Device*/
+.instructions__message-device {
+  margin-top: 5%;
+}
+.instructions__message-device h3 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+.instructions__message-device .title-mobile {
+  display: none;
+  font-size: 1.5em;
+}
+.instructions__message-device p {
+  font-size: 16px;
+  line-height: 1.3em;
+}
+.instructions__message-device .how-you-know {
+  max-width: 1020px;
+}
+.instructions__message-device .steps-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: self-start;
+}
+.instructions__message-device .steps-flex span {
+  font-weight: 500;
+  width: 5%;
+}
+.instructions__message-device .steps-flex p {
+  display: flex;
+  width: 80%;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  /* mini desktops, notebooks and laptops */
+  .instructions-page .instructions__guidelines-wrap .how-it-works__info {
+    gap: 30px;
+  }
+  .instructions-page .instructions__guidelines-wrap .how-it-works__info .wp-block-column.border-column {
+    padding: 30px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks {
+    margin-top: 130px;
+    padding-right: 0;
+    flex: 0 25%;
+    margin-right: 10%;
+    margin-left: 2%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks .guidelink__step {
+    padding: 4px 0;
+    font-size: 16px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap {
+    max-width: 50%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item {
+    padding-top: 70px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+    max-width: 70%;
+    max-height: 70%;
+    position: relative;
+    top: -15px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+    padding: 25px;
+    margin-top: -30px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption p {
+    line-height: 1.2;
+    font-size: 92%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption p strong:first-child {
+    margin-bottom: -30px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap::after {
+    width: 450px;
+  }
+  .instructions-page .instructions__tab-wrap .instruction-content__tabs .instruction-block figure figcaption ul li {
+    font-size: 15px !important;
+  }
+}
+@media screen and (min-height: 650px) {
+  /* default height guidelines on notebooks and laptops */
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines {
+    max-height: calc(110vh);
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+    top: 60px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+    margin-top: 10%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap::after {
+    bottom: 25%;
+    height: 35%;
+  }
+}
+@media screen and (min-height: 450px) and (max-height: 650px) {
+  /* mins height guidelines on notebooks and laptops */
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap {
+    /*outline: 1px solid greenyellow;*/
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines {
+    max-height: calc(144vh - 7px);
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+    top: 0px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+    margin-top: 0px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item:last-child .guideline__alert {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1440px) and (min-height: 651px) {
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines {
+    max-height: calc(116vh - 7px);
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+    position: relative;
+    width: fit-content;
+    height: auto;
+    top: 5px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+    margin-top: 0%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item:last-child .guideline__alert {
+    margin-bottom: 30px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap::after {
+    bottom: 25%;
+  }
+}
+@media screen and (min-width: 1367px) {
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines {
+    max-height: calc(90vh + 185px);
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+    padding-top: 6%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+    margin-top: 0%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap::after {
+    bottom: 33%;
+    height: 30%;
+  }
+  .instructions-page .stepers-slider .slide .wp-block-image img {
+    display: none;
+  }
+  .instructions-page .stepers-slider .slide .wp-block-image img.size_2x {
+    display: block !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .instructions-page .instructions__tab-wrap .tablink a.qr:before {
+    background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta_qrcode_2x.svg?v=1672242947') center center no-repeat;
+  }
+  .instructions-page .instructions__tab-wrap .tablink a.manual:before {
+    background: url('https://cdn.shopify.com/s/files/1/0102/2102/7425/files/iconcta-manual_2x.svg?v=1672242976') center center no-repeat;
+  }
+}
+@media screen and (min-width: 1367px) and (max-width: 2400px) {
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines {
+    max-height: calc(95vh + 10px);
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+    padding-top: 6%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+    margin-top: 0%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap::after {
+    bottom: 25%;
+    height: 40%;
+  }
+  .instructions-page .column__figure-instruction .figure-instruction {
+    margin: 5% auto 10%;
+  }
+  .instructions-page .banner__message-activation .instructions__btn-scroll_down {
+    margin-bottom: -2.2%;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .instructions-page .stepers-slider .slides__instructions {
+    justify-content: center;
+  }
+  .instructions-page .stepers-slider nav#navs-slide__steps {
+    display: none;
+  }
+  .instructions-page .stepers-slider nav > a {
+    display: none;
+  }
+  .instructions-page .button__info-mobile.active {
+    display: none;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .how-it-works__info {
+    margin-bottom: 70px;
+  }
+  .instructions__message-device {
+    margin-top: 0%;
+  }
+  .instructions__message-device .how-you-know {
+    border: 1px solid #DDE1E8;
+    box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    padding-bottom: 30px;
+    margin-top: 5%;
+  }
+  .instructions__message-device .how-you-know .wp-block-image img {
+    position: absolute;
+    bottom: 0;
+  }
+  .banner__message-activation.green-bg {
+    margin-top: 5%;
+  }
+  #end.is-layout-flex.wp-block-columns {
+    scroll-margin: 110px;
+  }
+  .bloque-donde-encontrarnos {
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: 768px) {
+  /* mobile */
+  .site-content-fullwidth {
+    padding-top: 0;
+    margin-top: -50px;
+    background: url("https://cdn.shopify.com/s/files/1/0102/2102/7425/files/BG_waves-instructions.png?v=1672954506") left top repeat-x;
+  }
+  .site-content-fullwidth .container.wided {
+    width: 90% !important;
+    background: transparent !important;
+  }
+  .site-content-fullwidth .wider-bg {
+    /*background: linear-gradient(#FAFAFB 0 0) top / 100% calc(60% + 40px) no-repeat;*/
+    background: transparent;
+  }
+  .instructions-page h1 {
+    font-size: 200%;
+  }
+  .instructions-page h1.has-text-align-center.nobotmrgn {
+    padding: 5% 15% 0;
+    margin-bottom: -10%;
+  }
+  .instructions-page h2.nobotmrgn {
+    font-size: 150%;
+  }
+  .instructions-page h2.nobotmrgn.has-text-align-center.nobotmrgn.positiontop {
+    padding: 5% 18% 0;
+  }
+  .instructions-page .stepers-slider {
+    width: calc(100vw - 15px);
+  }
+  .instructions-page .stepers-slider .slides__instructions {
+    padding: 15px 0 20px 10px;
+    width: 100%;
+  }
+  .instructions-page .stepers-slider .slides__instructions .slide {
+    border: 1px solid #DDE1E8;
+    box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    max-width: calc(100vw - 80px);
+  }
+  .instructions-page .stepers-slider .slides__instructions .slide.activatestep {
+    padding: 20px 25px;
+    width: auto;
+    min-width: 344px;
+    padding-top: 70px;
+    border: none;
+    box-shadow: none;
+  }
+  .instructions-page .stepers-slider .slides__instructions .slide.activatestep::before {
+    position: absolute;
+    height: calc(100% - 20px);
+    content: '';
+    width: 100%;
+    top: 20px;
+    left: 2px;
+    border: 1px solid #DDE1E8;
+    box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+  }
+  .instructions-page .stepers-slider .slides__instructions .slide.activatestep .wp-block-image {
+    margin-top: -35px !important;
+  }
+  .instructions-page .stepers-slider .slides__instructions > div {
+    margin-right: 15px;
+  }
+  .instructions-page .instructions__tab-wrap .tablink {
+    width: auto;
+  }
+  .instructions-page .instructions__tab-wrap .tablink a {
+    font-size: 0.9rem;
+    padding: 7px 25px;
+  }
+  .instructions-page .instructions__tab-wrap .tablink a span {
+    display: none;
+  }
+  .instructions-page .instructions__tab-wrap .tablink a span.code-text {
+    display: inline-block;
+  }
+  .instructions-page .instructions__tab-wrap .tablink a:before {
+    top: 4px;
+    left: 0px;
+  }
+  .instructions-page .instructions__tab-wrap .instruction-content__tabs {
+    display: none;
+  }
+  .instructions-page .instructions__tab-wrap .devicelink a {
+    font-size: 95%;
+  }
+  .instructions-page .is-layout-flex.wp-block-columns .sizedhwfull {
+    width: 100%;
+    padding-left: 10px;
+    left: -15px;
+    position: relative;
+  }
+  .instructions-page .is-layout-flex.wp-block-columns .is-layout-flow {
+    /*width: 100%;
+                padding-left: 2px;*/
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container {
+    overflow: hidden;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelinks {
+    display: none;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines {
+    margin-top: 20px;
+    max-height: 70vh;
+    margin-left: 0;
+    transform-origin: left top;
+    left: -20px;
+    margin-right: 0;
+    width: calc(100% - 10px);
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item {
+    padding-top: 0;
+    margin-left: 15px;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure figcaption {
+    margin-top: 0%;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap .guidelines .guideline__item figure img {
+    width: 100%;
+    height: auto;
+  }
+  .instructions-page .instructions__guidelines-wrap .guidelines-container .guidelines-wrap::after {
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    left: -20px;
+    width: 80%;
+  }
+  .instructions-page .instructions__guidelines-wrap .is-layout-flow.wp-block-column.border-column.bg-white {
+    padding: 28px;
+    border: 1px solid #DDE1E8;
+    border-radius: 16px;
+  }
+  .banner__message-activation {
+    position: relative;
+  }
+  .banner__message-activation h3.has-text-align-center {
+    font-size: 22px;
+  }
+  .banner__message-activation.green-bg {
+    border: none;
+  }
+  .banner__message-activation.green-bg::before,
+  .banner__message-activation.green-bg::after {
+    content: '';
+    height: 100%;
+    width: 20px;
+    top: 0;
+    position: absolute;
+    background-color: #ECFCF4;
+  }
+  .banner__message-activation::before {
+    left: -20px;
+  }
+  .banner__message-activation::after {
+    right: -20px;
+  }
+  .instruction-banner .icon {
+    display: none;
+  }
+  .instruction-banner h4 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .instruction-banner figure figcaption {
+    flex-basis: 92%;
+  }
+  .instruction-banner figure figcaption .button__cta-blank {
+    margin: 20px 0 -5px;
+    font-size: 13px;
+  }
+  .column__figure-instruction .figure-instruction {
+    width: 100%;
+  }
+  .instructions__message-device {
+    margin-top: 7%;
+  }
+  .instructions__message-device h3 {
+    display: none;
+  }
+  .instructions__message-device h2.title-mobile {
+    display: block;
+    text-align: center !important;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .instructions__message-device .wp-block-image {
+    position: relative;
+  }
+  .instructions__message-device .steps-flex p {
+    width: 90%;
+  }
+  .instructions__message-device .steps-flex span {
+    width: 15%;
+    font-weight: 500;
+  }
+  .instructions__message-device .how-you-know {
+    border: none;
+  }
+  .instructions__message-device .how-you-know .is-layout-flow.wp-block-column:last-child {
+    position: relative;
+  }
+  .instructions__message-device .how-you-know .is-layout-flow.wp-block-column:last-child::before {
+    content: '';
+    position: absolute;
+    left: -25%;
+    top: -10%;
+    border: 1px solid #DDE1E8;
+    box-shadow: 0px 5.90476px 23.619px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    width: 150%;
+    height: 120%;
+  }
+  .instructions__message-device .how-you-know figure {
+    margin: 0;
+  }
+}
