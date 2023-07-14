@@ -1,6 +1,6 @@
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="font-family:'Mulish', sans-serif" lang="it">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="font-family:'Mulish', sans-serif" lang="{{ meta.lang }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -9,7 +9,7 @@
 <meta name="x-apple-disable-message-reformatting">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="telephone=no" name="format-detection">
-<title>Istruzioni per l'installazione</title>
+<title>{{ meta.title_t }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
@@ -235,7 +235,7 @@
 </style>
 </head>
 <div style="display: none !important; visibility: hidden; opacity: 0; overflow: hidden; mso-hide: all; height: 0; width: 0; max-height: 0; max-width: 0; font-size: 1px; line-height: 1px; color: #151515;">
-    Atterriamo nella tua casella di posta. Cosa aspetti ad installare e attivare la tua eSIM?</div>
+    {{ meta.preview_t }}</div>
 
 <body class="body" bis_status="ok" style="width:100%;font-family:arial, 'helvetica neue', helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;word-spacing:normal" bis_frame_id="1336">
     <div class="es-wrapper-color" style="background-color:#F4F4F4;text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%">
@@ -273,7 +273,7 @@
                                                                     <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                                         <tr>
                                                                             <td align="left" style="padding:0;Margin:0;font-size:0px" height="30">
-                                                                                <a target="_blank" href="https://holafly.com/it/" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#000000;font-size:18px"><img src="https://cdn.shopify.com/s/files/1/2347/1879/files/Holafly_logo_bc469d25-7487-495a-a6b3-90635cdd1d2f.png?v=1655403668" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                                                <a target="_blank" href="https://holafly.com/" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#000000;font-size:18px"><img src="https://cdn.shopify.com/s/files/1/2347/1879/files/Holafly_logo_bc469d25-7487-495a-a6b3-90635cdd1d2f.png?v=1655403668" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
                                                                                         width="87" alt></a>
                                                                             </td>
                                                                         </tr>
@@ -289,7 +289,7 @@
                                                                         <tr>
                                                                             <td align="right" style="padding:0;Margin:0">
                                                                                 <p class="order-title" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:30px;color:#7f8082;font-size:16px;margin:0px;text-size-adjust:none;font-weight:400">
-                                                                                    Ordine {{order.name}}</p>
+                                                                                    {{order.headline}} {{order.name}}</p>
                                                                             </td>
                                                                         </tr>
                                                                     </table>
@@ -334,8 +334,8 @@
                                                         <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                             <tr>
                                                                 <td align="left" class="es-m-txt-l" style="padding:0;Margin:0">
-                                                                    <h1 style="Margin:0;line-height:22px;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;font-size:17px;font-style:normal;font-weight:700;color:#000000">Ciao {{ body.customer.first_name }}! ecco la tua eSIM:</h1>
-                                                                    <h2 style="Margin:0;line-height:28px;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;font-size:22px;font-style:normal;font-weight:400;color:#000000;padding-top:16px">{{ _orderItem.title }}</h2>
+                                                                    <h1 style="Margin:0;line-height:28px;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#000000">{{ _orderItem.hi_t }} {{ body.customer.first_name }}, {{ _orderItem.salutation_h }}</h1>
+                                                                    <h2 style="Margin:0;line-height:26px;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;font-size:19px;font-style:normal;font-weight:400;color:#000000;padding-top:16px">{{ _orderItem.title }}</h2>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -350,12 +350,12 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2" align="left" style="padding:20px 0px 20px 40px;Margin:0">
-                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:23px;color:#000000;font-size:15px;padding-right:20px;max-width:488px">Goditi il tuo acquisto e rimani connesso ovunque tu vada!</p>
+                                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:23px;color:#000000;font-size:15px;padding-right:20px;max-width:488px">{{ _orderItem.intro_p }}</p>
                                                     </td>
                                                 </tr>
                                                 <tr>
 													<td colspan="2" align="left" style="padding:0px 0px 40px 40px;Margin:0">
-														<a href="{{{ customerLink }}}" class="btndark-customer" style="float:left;margin-top:5px;margin-bottom:5px;border:1px solid #C8094E;background-color:#E12B57;border-radius:12px;padding:15px 48px;color:#fff;font-weight:500;text-decoration:none;font-family:Mulish, sans-serif;font-size:18px;">Visualizza le mie eSIM</a>
+														<a href="{{{ customerLink }}}" class="btndark-customer" style="float:left;margin-top:5px;margin-bottom:5px;border:1px solid #C8094E;background-color:#E12B57;border-radius:12px;padding:15px 48px;color:#fff;font-weight:600;text-decoration:none;font-family:Mulish, sans-serif;font-size:18px;">{{ _orderItem.cta_t }}</a>
 													</td>
 												</tr>
                                             </table>
@@ -389,7 +389,7 @@
                     {{if msisdn then}}
                     <table class="es-calling-intro" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;background-color:transparent;max-width:660px;width:100%">
                         <tr>
-                            <td align="left" bgcolor="#ffffff" style="padding:25px 40px 20px;Margin:0;background-color:#ffffff;border-radius:20px;border-style:solid;border-width:1px;border-color:#E1E1E3">
+                            <td align="left" bgcolor="#ffffff" style="padding:25px 40px;Margin:0;background-color:#ffffff;border-radius:20px;border-style:solid;border-width:1px;border-color:#E1E1E3">
                                 <!--[if mso]><table style="max-width:660px;width:100%;" cellpadding="0" cellspacing="0"><tr><td style="width:310px" valign="top"><![endif]-->
                                 <table cellpadding="0" cellspacing="0" align="left" class="es-left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;max-width:300px;width:40%">
                                     <tr>
@@ -397,7 +397,7 @@
                                             <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                     <td align="left" style="padding:0;Margin:0;" height="30">
-                                                        <p class="centered" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:22px; vertical-align:middle;color:#000000;font-size:15px;margin:15px 0 10px;text-size-adjust:none;font-weight:400;">Utilizza questo <strong>numero di telefono</strong> per fare e ricevere telefonate</p>
+                                                        <p class="centered" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:22px; vertical-align:middle;color:#000000;font-size:15px;margin:15px 0 10px;text-size-adjust:none;font-weight:400;">{{ body.content.instructions_qr.use_l.loop1_t }} <strong>{{ body.content.instructions_qr.use_l.loop2_t }}</strong> {{ body.content.instructions_qr.use_l.loop3_t }}.</p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -455,12 +455,14 @@
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0">
                                                                     <h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;font-size:28px;font-style:normal;font-weight:700;color:#000000;text-align:center;margin-top:15px">
-                                                                        Istruzioni</h2>
+                                                                        {{ body.content.instructions_qr.title_h }}</h2>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td align="left" style="padding:25px 40px;Margin:0;text-align:center">
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:27px;color:#000000;font-size:15px;text-align:center;margin:0 auto;width:80%;max-width:410px;">Segui le istruzioni riportate di seguito per installare e attivare la tua eSIM. Se è la prima volta che esegui questo processo, puoi essere guidato con i nostri <strong><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#333333;font-size:15px" href="https://www.youtube.com/@holafly/">video di aiuto</a>.</strong>
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:27px;color:#666666;font-size:18px;text-align:center;margin:0 auto;width:80%;max-width:480px;">
+                                                                        {{ body.content.instructions_qr.install_p }}
+                                                                        <strong><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#333333;font-size:18px" href="https://www.youtube.com/@holafly/">{{ body.content.instructions_qr.guide_a }}</a>.</strong>
                                                                     </p>
                                                                 </td>
                                                             </tr>
@@ -489,14 +491,14 @@
                                                                             <tr>
                                                                                 <td align="center" style="padding:0;Margin:0">
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:18px;color:#000000;font-size:14px;font-weight:400">
-                                                                                        Passo 1</p>
+                                                                                        {{ body.content.instructions_qr.step1_t }}</p>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td align="center" style="padding:0;Margin:0">
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:22px;color:black;font-size:17px;font-weight:700">
-                                                                                        <span style="font-family:Mulish, sans-serif;color:#e6485c">Installa</span>&nbsp;poche
-																						ore<br> prima del viaggio</p>
+                                                                                        {{ body.content.instructions_qr.step1bold_c }}
+																					    <span style="font-family:Mulish, sans-serif;color:#e6485c">{{ body.content.instructions_qr.step1red_c }} </span>&nbsp;<br>{{ body.content.instructions_qr.step1last_c }}</p>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -516,13 +518,13 @@
                                                                             <tr>
                                                                                 <td align="center" style="padding:0;Margin:0">
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:18px;color:#000000;font-size:14px;font-weight:400">
-                                                                                        Passo 2</p>
+                                                                                        {{ body.content.instructions_qr.step2_t }} </p>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td align="center" style="padding:0;Margin:0">
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Mulish, sans-serif;line-height:22px;color:black;font-size:17px;font-weight:700">
-                                                                                        <span style="font-family:Mulish, sans-serif;color:#e6485c">Attiva</span>&nbsp;quando arrivi a<br>destinazione
+                                                                                        {{ body.content.instructions_qr.step2bold_t }} <span style="font-family:Mulish, sans-serif;color:#e6485c">{{ body.content.instructions_qr.step2red_t }}</span>&nbsp;<br> {{ body.content.instructions_qr.steplast_t }}
                                                                                     </p>
                                                                                 </td>
                                                                             </tr>
@@ -545,40 +547,39 @@
                                                         <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;table-layout:fixed;border-spacing:0px;">
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0"><img style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin-top:50px" src="https://cdn.shopify.com/s/files/1/2347/1879/files/number.png?v=1665584112">
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish',sans-serif;line-height:28px;color:black;font-size:22px;padding-top:16px;font-weight:700;padding-bottom:24px;padding-left:20px;padding-right:20px">Installa la tua eSIM <span style="color:#e6485c">poche <br>ore prima del viaggio</span>
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish',sans-serif;line-height:28px;color:black;font-size:22px;padding-top:16px;font-weight:700;padding-bottom:24px;padding-left:20px;padding-right:20px">{{ body.content.instructions_qr.installblack_p }}
+                                                                        <span style="color:#e6485c"><br>{{ body.content.instructions_qr.installred_p }}</span>
                                                                     </p>
                                                                     <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;margin:0 0 0px;max-width:650px">
                                                                         <tr>
                                                                             <td align="center" style="padding:0;Margin:0;font-size:0px">
-                                                                                <div><img class="adapt-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/info-IT-msg_connection.png?v=1669041881" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:100%;max-width:360px">
+                                                                                <div><img class="adapt-img" src="{{ body.content.instructions_qr.active_i }}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:100%;max-width:360px">
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td align="center" style="padding:0;Margin:0;font-size:0px">
-                                                                                <ul class="ul-settings" style="list-style:none;display:inline-block;text-align:center;padding:0 5%;margin-bottom:10px; margin-top:25px; max-width: 650px;">
-                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:16px;display:inline-block;vertical-align:middle">
-                                                                                        Vai a Impostazioni</li>
-                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:16px;display:inline-block;vertical-align:middle">
+                                                                                <ul class="ul-settings" style="list-style:none;display:inline-block;text-align:center;padding:0 5%;margin-bottom:10px; margin-top:25px; max-width: 400px;">
+                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:18px;display:inline-block;vertical-align:middle">
+                                                                                        {{ body.content.instructions_qr.install_l.loop1_t }}</li>
+                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:18px;display:inline-block;vertical-align:middle">
                                                                                         <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Settings__iOS.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px" width="25"></li>
-                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:16px;display:inline-block;vertical-align:middle">
-                                                                                        → Cellulare</li>
-                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:16px;display:inline-block;vertical-align:middle">
+                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:18px;display:inline-block;vertical-align:middle">
+                                                                                        → {{ body.content.instructions_qr.install_l.loop2_t }}</li>
+                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:18px;display:inline-block;vertical-align:middle">
                                                                                         <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Signal.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px" width="25"></li>
-                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:16px;display:inline-block;vertical-align:middle">
-                                                                                        → Aggiungi eSIM</li>
+                                                                                    <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:18px;display:inline-block;vertical-align:middle">
+                                                                                        → {{ body.content.instructions_qr.install_l.loop3_t }}</li>
                                                                                 </ul>
                                                                             </td>
                                                                         </tr>
-                                                                    </table>  
+                                                                    </table>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td align="center" style="Margin:0;padding-top:15px;padding-bottom:15px;padding-left:40px;padding-right:40px">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:100;margin-bottom:30px">
-                                                                        Assicurati di avere questo codice su <strong style="font-weight:800;">un altro dispositivo</strong> per	scansionarlo dal tuo telefono. Se non è possibile
-                                                                        <strong style="font-weight:800;">prova l'installazione manuale</strong> che ti
-																		mostreremo di seguito.
+                                                                        {{ body.content.instructions_qr.info_l.loop1_t }} <strong>{{ body.content.instructions_qr.info_l.loop2_t }}</strong> {{ body.content.instructions_qr.info_l.loop3_t }} <strong>{{ body.content.instructions_qr.info_l.loop4_t }}</strong> {{ body.content.instructions_qr.info_l.loop5_t }}</p>
                                                                     </p>
                                                                 </td>
                                                             </tr>
@@ -594,27 +595,27 @@
 																<td align="center" style="padding:0;Margin:0">
 																	<p
 																		style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Muli', sans-serif;line-height:26px;color:black;font-size:17px;padding:24px;font-weight:400">
-                                                                        Numero di riferimento: <strong>{{ iccid }}</strong>
+																		{{ body.content.instructions_qr.reference_t }} <strong>{{ iccid }}</strong>
 																	</p>
 																</td>
 															</tr>
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0">
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:26px;color:#292B2E;font-size:17px;padding:24px;font-weight:400">
-                                                                        Se non trovi il codice QR, non esitare a<br>contattarci nella nostra <strong style="text-decoration:underline"><a href="https://wa.me/message/26QNKY6DJF6PI1" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#292B2E;font-size:17px">Chat Online</a></strong>.</p>
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:26px;color:#8A9099;font-size:17px;padding:24px;font-weight:400">
+                                                                        {{ body.content.instructions_qr.support }} <strong style="text-decoration:underline"> <a href="https://wa.me/message/26QNKY6DJF6PI1" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#333333;font-size:18px">{{ body.content.instructions_qr.chat_t }}</a></strong>.<br></p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0;padding-bottom:50px">
-                                                                    <a href="https://esim.holafly.com/it/come-installare-e-attivare-esim-holafly-iphone/" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#391484;font-size:18px"><img style="display:inline;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; width: auto; max-width: 45%;" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Button_label_2.png?v=1665589778"></a><span class="divisor-btns" style="width:0px;height:20px;display:inline-block"></span>
-                                                                    <a href="https://esim.holafly.com/it/come-installare-e-attivare-esim-holafly-samsung/" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#391484;font-size:18px"><img style="display:inline;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; width: auto; max-width: 45%; padding-left:0px" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Button_label_3.png?v=1665589778" alt></a>
+                                                                    <a href="https://esim.holafly.com/fr/installez-activez-holafly-esim-iphone/" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#391484;font-size:18px"><img style="display:inline;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; width: auto; max-width: 45%;" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Guide_pour_IOS.png?v=1665589485" alt></a><span class="divisor-btns" style="width:0px;height:20px;display:inline-block"></span>
+                                                                    <a href="https://esim.holafly.com/fr/installez-activez-holafly-esim-samsung/" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#391484;font-size:18px"><img style="display:inline;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; width: auto; max-width: 45%; padding-left:0px" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Guide_pour_Android.png?v=1665589485" alt></a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0;font-size:0px" valign="middle">
                                                                     <hr style="Margin:0;margin:0 auto;max-width:573px;text-align:center;border:0;background-color:#DCDEE2;height:2px;width:80%">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size:22px;font-weight:700;padding-top:35px;padding-bottom:20px">
-                                                                        Installazione manuale</p>
+                                                                        {{ body.content.instructions_manual.title_h }}</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -627,26 +628,25 @@
                                                                                     <p style="display:inline-block;margin:30px auto 0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:18px;color:black;font-size:13px;padding:7px 22px 2px 10px;border-radius: 25px; background-color: #DCF4FF;">
                                                                                         <img class="light-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-ios-tipe-install.png?v=1672697230" style="display:inline; vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:7px;"
                                                                                         /><img class="dark-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-iosdark-tipe-install.png?v=1674768404" style="display:none;vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:7px;"/>
-                                                                                        <strong style="font-weight:700;font-size: 18px;">Per dispositivi iOS</strong>
+                                                                                        <strong style="font-weight:700;font-size: 18px;">{{ body.content.instructions_manual.iostitle_t }}</strong>
                                                                                     </p>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>
-                                                                                    <ul class="ul-settings" style="list-style:none;display:inline-block;text-align:center;padding:0 15px;margin-top:20px;margin-bottom:10px;vertical-align:middle; max-width: 420px;">
-                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:black;font-size:clamp(14px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Vai a Impostazioni </li>
-                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:#666666;font-size:clamp(14px,2vw,16px);display:inline-block;vertical-align:middle">
+                                                                                    <ul class="ul-settings" style="list-style:none;display:inline-block;text-align:center;padding:0 15px;margin-top:20px;margin-bottom:10px;vertical-align:middle">
+                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:black;font-size:clamp(14px,2vw,18px);display:inline-block;vertical-align:middle">
+                                                                                            {{ body.content.instructions_manual.iossteps_l.loop1_t }} </li>
+                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:#666666;font-size:clamp(14px,2vw,18px);display:inline-block;vertical-align:middle">
                                                                                             <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Settings__iOS.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;vertical-align:middle" width="25"></li>
-                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:black;font-size:clamp(14px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            → Cellulare </li>
-                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:#666666;font-size:clamp(14px,2vw,16px);display:inline-block;vertical-align:middle">
+                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:black;font-size:clamp(14px,2vw,18px);display:inline-block;vertical-align:middle">
+                                                                                            → {{ body.content.instructions_manual.iossteps_l.loop2_t }} </li>
+                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:#666666;font-size:clamp(14px,2vw,18px);display:inline-block;vertical-align:middle">
                                                                                             <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Signal.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;vertical-align:middle" width="25"></li>
-                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:black;font-size:clamp(14px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            → Aggiungi eSIM →</li>
-                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:black;font-size:clamp(14px,2vw,16px);display:inline-block;vertical-align:middle"> Usa un codice QR</li>
+                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:10px;margin-left:0;color:black;font-size:clamp(14px,2vw,18px);display:inline-block;vertical-align:middle"> → {{ body.content.instructions_manual.iossteps_l.loop3_t }}</li>
                                                                                     </ul>
-                                                                                    <p style="Margin:0 auto;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:clamp(13px,2vw,16px);font-weight:400;max-width:442px;padding-bottom:24px;text-align:center;padding-left:20px;padding-right:20px">Premi “Inserisci i dati manualmente” e copia e incolla i seguenti codici al loro posto.</p>
+                                                                                    <p style="Margin:0 auto;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:clamp(13px,2vw,16px);font-weight:400;max-width:442px;padding-bottom:24px;text-align:center;padding-left:20px;padding-right:20px">
+                                                                                        {{ body.content.instructions_manual.iosmessage_p }}</p>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
@@ -657,11 +657,10 @@
                                                                                             <tr>
                                                                                                 <td style="padding:0;Margin:0;text-align:center;width:100%" align="center">
                                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size: clamp(14px, 2vw, 18px);padding-top:23px;padding-bottom:10px">
-                                                                                                        <strong style="font-weight:700">Indirizzo SM-DP+:</strong><br>{{smdp}}</p>
+                                                                                                        <strong style="font-weight:700">{{ body.content.instructions_manual.addresstxt_t }}</strong><br>{{smdp}}</p>
                                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size: clamp(12px, 2vw, 18px);padding-top:5px;padding-bottom:10px">
-                                                                                                    <strong style="font-size: clamp(14px, 2vw, 18px);font-weight:700">Codice di attivazione:</strong><br><span class="wraped" style="mso-line-height-rule: exactly; text-decoration: none; color: black; padding: 0 10px; display:table-cell;word-break: break-all;overflow-wrap: break-word;-ms-word-break: break-all;-ms-hyphens: auto;-moz-hyphens: auto; -webkit-hyphens: auto;hyphens: auto;word-wrap:break-word;">{{activationCode}}</span></p>
-                                                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size: clamp(12px, 2vw, 18px);padding-top:0px;padding-bottom:22px">
-                                                                                                        Codice di conferma: Non applicabile
+                                                                                                    <strong style="font-size: clamp(14px, 2vw, 18px);font-weight:700">{{ body.content.instructions_manual.codetxt_t }}</strong><br><a href="#" class="wraped" style="mso-line-height-rule: exactly; text-decoration: none; color: black; display:table-cell;word-break: break-all;overflow-wrap: break-word;-ms-word-break: break-all;-ms-hyphens: auto;-moz-hyphens: auto; -webkit-hyphens: auto;hyphens: auto;word-wrap:break-word;">{{activationCode}}</a></p>
+                                                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size: clamp(12px, 2vw, 18px);padding-top:0px;padding-bottom:22px">{{ body.content.instructions_manual.confirmtxt_t }}
                                                                                                     </p>
                                                                                                 </td>
                                                                                             </tr>
@@ -688,47 +687,47 @@
                                                                                         <img class="light-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-android-type-install.png?v=1672697230" style="display:inline;vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:3px;"
                                                                                         /><img class="dark-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-androiddark-type-install.png?v=1674768404" style="display:none; vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:3px;"
                                                                                         />
-                                                                                        <strong style="font-weight:700;font-size: 18px;">Per dispositivi Android</strong>
+                                                                                        <strong style="font-weight:700;font-size: 18px;">{{ body.content.instructions_manual.androidtitle_t }}</strong>
                                                                                     </p>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:18px;color:black;font-size: clamp(15px, 2vw, 18px);margin-top:33px;padding-bottom:0px">
-                                                                                        <strong style="font-weight:700">Samsung
+                                                                                        <strong style="font-weight:700">{{ body.content.instructions_manual.androidinfo_o.samsungtitle_t }}
                                                                                         </strong>
                                                                                     </p>
                                                                                     <ul style="list-style:none;display:inline-block;text-align:center;padding:0;margin-bottom:30px;padding-left:15px;padding-right:15px;vertical-align:middle; max-width: 400px;">
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Vai a Impostazioni → </li>
+                                                                                            {{ body.content.instructions_manual.androidinfo_o.samsungsteps_l.loop1_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp; Connessioni → </li>
+                                                                                            &nbsp; {{ body.content.instructions_manual.androidinfo_o.samsungsteps_l.loop2_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Aggiungi eSIM → </li>
+                                                                                            &nbsp; {{ body.content.instructions_manual.androidinfo_o.samsungsteps_l.loop2_3 }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Añadir eSIM → </li>
+                                                                                            &nbsp;{{ body.content.instructions_manual.androidinfo_o.samsungsteps_l.loop4_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Scansione codice QR del gestore telefonico → </li>
+                                                                                                &nbsp;{{ body.content.instructions_manual.androidinfo_o.samsungsteps_l.loop5_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Inserisci codice attivaz </li>
+                                                                                            {{ body.content.instructions_manual.androidinfo_o.samsungsteps_l.loop6_t }} </li>
                                                                                     </ul>
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:18px;color:black;font-size: clamp(15px, 2vw, 18px);margin-top:0px;padding-bottom:0px">
-                                                                                        <strong style="font-weight:700">Google pixel
+                                                                                        <strong style="font-weight:700">{{ body.content.instructions_manual.androidinfo_o.pixeltitle_t }}
                                                                                         </strong>
                                                                                     </p>
                                                                                     <ul style="list-style:none;display:inline-block;text-align:center;padding:0;margin-bottom:30px; padding-left:15px; padding-right:15px;vertical-align:middle; max-width: 600px;">
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Vai a Impostazioni → </li>
+                                                                                            &nbsp;{{ body.content.instructions_manual.androidinfo_o.pixelsteps_l.loop1_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Réseau et Internet → </li>
+                                                                                            &nbsp;{{ body.content.instructions_manual.androidinfo_o.pixelsteps_l.loop2_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Aggiungi SIM → </li>
+                                                                                            &nbsp;{{ body.content.instructions_manual.androidinfo_o.pixelsteps_l.loop3_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Preferisci scaricare una SIM? → </li>
+                                                                                            &nbsp;{{ body.content.instructions_manual.androidinfo_o.pixelsteps_l.loop4_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Serve aiuto? → </li>
+                                                                                            &nbsp;{{ body.content.instructions_manual.androidinfo_o.pixelsteps_l.loop5_t }} → </li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(13px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            &nbsp;Inserisci manualmente</li>
+                                                                                            &nbsp;{{ body.content.instructions_manual.androidinfo_o.pixelsteps_l.loop6_t }}</li>
                                                                                     </ul>
                                                                                 </td>
                                                                             </tr>
@@ -742,7 +741,7 @@
                                                                                                 <td style="padding:0;Margin:0;text-align:center;width:100%;word-break:break-all;display:inline-block" align="center">
                                                                                                     <p style="Margin:0;display:inline-block;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:20px;-ms-word-break: break-all;-ms-hyphens: auto;-moz-hyphens: auto; -webkit-hyphens: auto;hyphens: auto;color:black;font-size: clamp(14px, 2vw, 18px);
                                                                                                     padding-left: 10px;padding-right: 10px;padding-top:15px;padding-bottom:20px;word-break: break-all;overflow-wrap: break-word;">
-                                                                                                        <strong style="font-size: clamp(14px, 2vw, 18px);font-weight:700">Codice di attivazione:</strong><br><span class="wraped" style="mso-line-height-rule: exactly; text-decoration: none; color: black; display:table-cell;word-break: break-all;overflow-wrap: break-word;-ms-word-break: break-all;-ms-hyphens: auto;-moz-hyphens: auto; -webkit-hyphens: auto;hyphens: auto;word-wrap:break-word;">LPA:1${{smdp}}${{activationCode}}</span>
+                                                                                                        <strong style="font-size: clamp(14px, 2vw, 18px);font-weight:700">{{ body.content.instructions_manual.codetxt_t }}</strong><br><a href="#" class="wraped" style="mso-line-height-rule: exactly; text-decoration: none; color: black; display:table-cell;word-break: break-all;overflow-wrap: break-word;-ms-word-break: break-all;-ms-hyphens: auto;-moz-hyphens: auto; -webkit-hyphens: auto;hyphens: auto;word-wrap:break-word;">LPA:1${{smdp}}${{activationCode}}</a>
                                                                                                     </p>
                                                                                                 </td>
                                                                                             </tr>
@@ -767,7 +766,7 @@
                                                             {{if msisdn then}}
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0">
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size:22px;font-weight:700;padding-bottom:24px;padding-left:20px;padding-right:20px">Attiva il piano dati<span style="color:#e6485c">&nbsp;quando arrivi a destinazione</span>
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size:22px;font-weight:700;padding-bottom:24px;padding-left:20px;padding-right:20px">{{ body.content.instructions_manual.activecallsbold_t }}<span style="color:#e6485c">&nbsp;{{ body.content.instructions_manual.activecallsred_t }}</span>
                                                                     </p>
                                                                     <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;display:table;border-collapse:separate;table-layout:fixed; border-spacing:0px; text-align: center;">
 																		<tbody>
@@ -776,7 +775,8 @@
 																					<p style="display:inline-block;margin:5px auto 15px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:18px;color:black;font-size:13px;padding:7px 22px 2px 10px;border-radius: 25px; background-color: #DCF4FF;">
 																						<img class="light-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-ios-tipe-install.png?v=1672697230" style="display:inline; vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:7px;"
 																						/><img class="dark-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-iosdark-tipe-install.png?v=1674768404" style="display:none;vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:7px;"/>
-																						<strong style="font-weight:700;font-size: 18px;">Per dispositivi iOS</strong>
+																						<strong style="font-weight:700;font-size: 18px;">{{ body.content.instructions_manual.iostitle_t }}
+                                                                                        </strong>
 																					</p>
 																				</td>
 																			</tr>
@@ -784,10 +784,10 @@
                                                                                 <td>
                                                                                     <ul style="list-style:none;display:inline-block;text-align:center;padding:0;margin-bottom:10px;width:100%;max-width:400px;">
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:16px;display:inline-block;vertical-align:middle">
-                                                                                            Vai su Impostazioni</li>
+                                                                                            {{ body.content.instructions_manual.activecallsios_l.loop1_t }}</li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:16px;display:inline-block;vertical-align:middle">
                                                                                             <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Settings__iOS.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px 0 5px" width="25"></li>
-                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:16px;display:inline-block;vertical-align:middle"><span style="font-family:'Mulish', sans-serif;">→</span> Cellulare</li>
+                                                                                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:16px;display:inline-block;vertical-align:middle"><span style="font-family:'Mulish', sans-serif;">→</span> {{ body.content.instructions_manual.activecallsios_l.loop2_t }}</li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:16px;display:inline-block;vertical-align:middle">
                                                                                             <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Signal.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 10px 0 5px" width="25"></li>
                                                                                     </ul>
@@ -795,22 +795,27 @@
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:400px;padding-bottom:24px;padding-left:20px;padding-right:20px">Seleziona <strong>Linea voce di default</strong> e imposta Holafly come opzione preferita per effettuare e ricevere telefonate.
+                                                                    
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:400px;padding-bottom:24px;padding-left:20px;padding-right:20px">{{ body.content.instructions_manual.activecallsios_l.loop1_t }} <strong>{{ body.content.instructions_manual.activecallsios_l.loop2_t }}</strong> {{ body.content.instructions_manual.activecallsios_l.loop3_t }}
+                                                                    </span>
                                                                     </p>
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:400px;padding-bottom:24px;padding-left:20px;padding-right:20px"><strong>Ritorna a Cellulare</strong> e seleziona l’eSIM di Holafly, <strong>attiva questa linea e il roaming dei dati</strong>. Inoltre, assicurati di selezionare il nuovo piano come principale per i dati mobili.
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:400px;padding-bottom:24px;padding-left:20px;padding-right:20px"><strong>{{ body.content.instructions_manual.activecallsios_l.loop4_t }}</strong>{{ body.content.instructions_manual.activecallsios_l.loop5_t }} <strong>{{ body.content.instructions_manual.activecallsios_l.loop6_t }}</strong>{{ body.content.instructions_manual.activecallsios_l.loop7_t }}
+                                                                    </span>
                                                                     </p>
                                                                     <table cellpadding="0" cellspacing="0" width="80%" class="active-call-mobile" style="mso-table-lspace:0pt;mso-table-rspace:0pt;display:table;border-collapse:separate;table-layout:fixed; border-spacing:0px; text-align: center; border-bottom: 3px solid #E4E6EA; margin-bottom: 40px;">
 																		<tbody>
 																			<tr>
                                                                                 <td>
-                                                                                    <img src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/email-activation-voice01-IT.png?v=1686867686" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0px 0 0 auto" width="212px">
+                                                                                    <img src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/email-activation-voice01-EN.png?v=1683730395" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0px 0 0 auto" width="212px" alt="">
                                                                                 </td>
                                                                                 <td class="mid-arrow" style="vertical-align: bottom; text-align: center;">
+                                                                                    <!--<span style="color:#3981F1;font-family:'Mulish', sans-serif;line-height:21px;font-size:40px; margin-bottom: 25px;">→</span>
+                                                                                    <span style="color:#3981F1;font-family:'Mulish', sans-serif;line-height:21px;font-size:40px; margin-bottom: 25px;">↓</span>-->
                                                                                     <img class="arrow-next-desktop" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 auto;" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/email-activation-step-arrow-next.jpg?v=1683736185" width="30"/>
                                                                                     <img class="arrow-next-mobile" style="display:none;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 auto;" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/email-activation-step-arrow-down.jpg?v=1683736185" width="30"/>
                                                                                 </td>
                                                                                 <td>
-                                                                                    <img src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/email-activation-voice02-IT.png?v=1686867686" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0px auto 0 0" width="212px">
+                                                                                    <img src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/email-activation-voice02-EN.png?v=1683730395" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0px auto 0 0" width="212px" alt="">
                                                                                 </td>
                                                                             </tr>
                                                                         </tbody>
@@ -825,44 +830,43 @@
                                                                                 <td>
                                                                                     <p style="display:inline-block;margin:30px auto 0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:18px;color:black;font-size:13px;padding:7px 22px 7px 10px;border-radius: 25px; background-color: #DCF4FF;">
                                                                                         <img class="light-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-android-type-install.png?v=1672697230" style="display:inline;vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:3px;"><img class="dark-img" src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/icon_mail-androiddark-type-install.png?v=1674768404" style="display:none; vertical-align:middle;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px;padding-bottom:3px;">
-                                                                                        <strong style="font-weight:700;font-size: 18px;">Per dispositivi Android</strong>
+                                                                                        <strong style="font-weight:700;font-size: 18px;">{{ body.content.instructions_manual.androidtitle_t }}</strong>
                                                                                     </p>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:18px;color:black;font-size:18px;margin-top:33px;padding-bottom:0px">
-                                                                                        <strong style="font-weight:700">Samsung </strong>
+                                                                                        <strong style="font-weight:700">{{ body.content.instructions_manual.androidtitle_t }}</strong>
                                                                                     </p>
                                                                                     <ul style="list-style:none;display:inline-block;text-align:center;padding:0;margin-bottom:10px;padding-left:15px;padding-right:15px;vertical-align:middle; max-width: 470px;">
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(15px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Vai su Impostazioni <strong style="font-family:'Mulish', sans-serif;font-weight:bold;">→&nbsp;</strong></li>
+                                                                                            {{ body.content.instructions_manual.activecallsamsung_l.loop1_t }} <strong style="font-family:'Mulish', sans-serif;font-weight:bold;">→&nbsp;</strong></li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(15px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Connessioni <strong style="font-family:'Mulish', sans-serif;font-weight:bold;">→&nbsp;</strong></li>
+                                                                                            {{ body.content.instructions_manual.activecallsamsung_l.loop2_t }} <strong style="font-family:'Mulish', sans-serif;font-weight:bold;">→&nbsp;</strong></li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(15px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Gestione schede SIM
+                                                                                            {{ body.content.instructions_manual.activecallsamsung_l.loop3_t }}
                                                                                         </li>
                                                                                     </ul>
-                                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly; dispaly:block; text-align: center; margin: 0 auto; font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:460px;padding-bottom:14px;padding-left:20px;padding-right:20px">Tocca <strong>Dati mobili</strong> e seleziona Holafly come linea preferita per i dati. Poi, tocca <strong>Chiamate</strong> e seleziona Holafly come linea preferita per effettuare e ricevere telefonate.
+                                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly; dispaly:block; text-align: center; margin: 0 auto; font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:460px;padding-bottom:14px;padding-left:20px;padding-right:20px">{{ body.content.instructions_manual.activecallsamsungtxt_l.loop1_t }} <strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop2_t }} </strong> {{ body.content.instructions_manual.activecallsamsungtxt_l.loop3_t }} <strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop4_t }}</strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop5_t }}
                                                                                     </p>
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly; dispaly:block; text-align: center; margin: 0 auto; font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:400px;padding-bottom:30px;padding-left:20px;padding-right:20px">
-                                                                                        <strong>Ritorna a Connessioni</strong>, seleziona <strong>Reti mobili</strong> e attiva il <strong>Roaming dati</strong>.
+                                                                                        <strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop6_t }}</strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop7_t }} <strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop8_t }}</strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop9_t }} <strong>{{ body.content.instructions_manual.activecallsamsungtxt_l.loop10_t }}</strong>.
                                                                                     </p>
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:18px;color:black;font-size: 18px;margin-top:15px;padding-bottom:0px">
-                                                                                        <strong style="font-weight:700">Google pixel
-                                                                                        </strong>
+                                                                                        <strong style="font-weight:700">{{ body.content.instructions_manual.androidinfo_o.pixeltitle_t }}</strong>
                                                                                     </p>
                                                                                     <ul style="list-style:none;display:inline-block;text-align:center;padding:0;margin-bottom:10px;padding-left:15px;padding-right:15px;vertical-align:middle; max-width: 470px;">
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(15px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Vai su Impostazioni <strong style="font-family:'Mulish', sans-serif;font-weight:bold;">→&nbsp;</strong></li>
+                                                                                            {{ body.content.instructions_manual.activecallspixel_l.loop1_t }} <strong style="font-family:'Mulish', sans-serif;font-weight:bold;">→&nbsp;</strong></li>
                                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:17px;Margin-bottom:5px;margin-left:0;color:black;font-size:clamp(15px,2vw,16px);display:inline-block;vertical-align:middle">
-                                                                                            Rete e Internet
+                                                                                            {{ body.content.instructions_manual.activecallspixel_l.loop2_t }} 
                                                                                         </li>
                                                                                     </ul>
-                                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly; dispaly:block; text-align: center; margin: 0 auto; font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:440px;padding-bottom:14px;padding-left:20px;padding-right:20px">Tocca <strong>Chiamate e SMS</strong> e seleziona Holafly come linea preferita per effettuare e ricevere telefonate.
+                                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly; dispaly:block; text-align: center; margin: 0 auto; font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:440px;padding-bottom:14px;padding-left:20px;padding-right:20px">{{ body.content.instructions_manual.activecallspixeltxt_l.loop1_t }} <strong>{{ body.content.instructions_manual.activecallspixeltxt_l.loop2_t }}</strong> {{ body.content.instructions_manual.activecallspixeltxt_l.loop3_t }}
                                                                                     </p>
                                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly; dispaly:block; text-align: center; margin: 0 auto; font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:420px;padding-bottom:30px;padding-left:20px;padding-right:20px">
-                                                                                        <strong>Ritorna a Rete e Internet</strong>, seleziona <strong>SIM</strong>, y presiona en la eSIM de Holafly para activar la opción <strong>Usar SIM</strong>. tocca l’eSIM di Holafly e attiva Usa SIM. Comparirà un messaggio che ti chiederà se vuoi passare a Holafly per l’utilizzo dei dati mobili. Conferma e attendi. Poi attiva il <strong>Roaming</strong>.
+                                                                                        <strong>{{ body.content.instructions_manual.activecallspixeltxt_l.loop4_t }}</strong>{{ body.content.instructions_manual.activecallspixeltxt_l.loop5_t }} <strong>{{ body.content.instructions_manual.activecallspixeltxt_l.loop6_t }}</strong> {{ body.content.instructions_manual.activecallspixeltxt_l.loop7_t }} <strong>{{ body.content.instructions_manual.activecallspixeltxt_l.loop8_t }}</strong>{{ body.content.instructions_manual.activecallspixeltxt_l.loop9_t }} <strong>{{ body.content.instructions_manual.activecallspixeltxt_l.loop10_t }}</strong>
                                                                                     </p>
                                                                                 </td>
                                                                             </tr>
@@ -874,15 +878,15 @@
                                                             {{else}}
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0">
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size:22px;font-weight:700;padding-bottom:24px;padding-left:20px;padding-right:20px">Attiva il tuo piano dati<span style="color:#e6485c">&nbsp;quando arrivi a destinazione</span>
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size:22px;font-weight:700;padding-bottom:24px;padding-left:20px;padding-right:20px">{{ body.content.instructions_manual.activationbold_t }}<span style="color:#e6485c">&nbsp;{{ body.content.instructions_manual.activationred_t }}</span>
                                                                     </p>
                                                                     <ul style="list-style:none;display:inline-block;text-align:center;padding:0;margin-bottom:10px">
                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:18px;display:inline-block;vertical-align:middle">
-                                                                            Vai a Impostazioni</li>
+                                                                            {{ body.content.instructions_manual.activationsteps_l.loop1_t }}</li>
                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:18px;display:inline-block;vertical-align:middle">
                                                                             <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Settings__iOS.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 5px 0 5px" width="25"></li>
                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:black;font-size:18px;display:inline-block;vertical-align:middle">
-                                                                            &nbsp; → Cellulare</li>
+                                                                            &nbsp; → {{ body.content.instructions_manual.activationsteps_l.loop2_t }}</li>
                                                                         <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:27px;Margin-bottom:15px;margin-left:0;color:#666666;font-size:18px;display:inline-block;vertical-align:middle">
                                                                             <img class="adapt-img" src="https://cdn.shopify.com/s/files/1/2347/1879/files/Signal.png?v=1665584511" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 10px 0 5px" width="25"></li>
                                                                     </ul>
@@ -890,14 +894,9 @@
                                                             </tr>
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0;border-style:solid;border-width:1px;border-color:#E1E1E3;border-radius:20px;border-top:0;border-left:0;border-right:0">
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:400px;padding-bottom:24px;padding-left:20px;padding-right:20px">
-                                                                        Seleziona la eSIM di Holafly. Attiva questa
-																		linea e il Roaming dati. Assicurati di scegliere
-																		il tuo nuovo piano <strong style="font-weight:800;">come principale per i dati cellulari</strong>.
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;font-weight:400;max-width:400px;padding-bottom:24px;padding-left:20px;padding-right:20px">{{ body.content.instructions_manual.activiatontxt_l.loop1_t }}<strong> {{ body.content.instructions_manual.activiatontxt_l.loop2_t }}</strong>
                                                                     </p>
-                                                                    <img src="https://cdn.shopify.com/s/files/1/0102/2102/7425/files/info-IT-turn_on_device.jpg?v=1669040096"
-                                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:15px auto 0" width="220px" alt>
-                                                                </td>
+                                                                    <img src="https://cdn.shopify.com/s/files/1/2347/1879/files/instructions_fr.png?v=1665589485" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:15px auto 0; width: 220px;" width="220" alt></td>
                                                             </tr>
                                                             {{end}}
                                                         </table>
@@ -935,7 +934,7 @@
                                                 <tr>
                                                     <td align="center" style="padding:0;Margin:0">
                                                         <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:33px;color:#000000;font-size:22px;font-weight:700">
-                                                            Tutto quello che devi sapere</p>
+                                                            Tout ce que vous avez besoin de savoir</p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -957,10 +956,11 @@
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0"><img src="https://cdn.shopify.com/s/files/1/2347/1879/files/event.png?v=1665585209" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;background-color:#ffffff">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:24px;color:#000000;font-size:16px;font-weight:700;padding-bottom:4px;padding-top:21px">
-                                                                        Installa il giorno <br>del tuo viaggio</p>
+                                                                        Installation le jour de votre voyage</p>
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:#000000;font-size:16px;font-weight:400">
-                                                                        Ti consigliamo di installare la eSIM il giorno del tuo viaggio, poche ore prima di salire a bordo.
-                                                                    </p>
+                                                                        Nous vous recommandons d'installer l'eSIM le
+																		jour de votre voyage, quelques heures avant
+																		l'embarquement.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -984,9 +984,9 @@
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0"><img src="https://cdn.shopify.com/s/files/1/2347/1879/files/qr_code_scanner_658065fd-5a68-4150-829b-95baef220563.png?v=1665585209" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;background-color:#ffffff">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:24px;color:#000000;font-size:16px;font-weight:700;padding-bottom:6px;padding-top:21px">
-                                                                        Scansiona il QR dal menu<br>Impostazioni</p>
+                                                                        Scannez le QR depuis le menu Paramètres</p>
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:#000000;font-size:16px;font-weight:400">
-                                                                        Tieni presente che alcuni telefoni non riconosceranno il codice se lo scansioni dalla fotocamera.
+                                                                        Notez que certains téléphones ne reconnaîtront pas le code si vous le scannez à partir de l'appareil photo.
                                                                     </p>
                                                                 </td>
                                                             </tr>
@@ -1016,8 +1016,9 @@
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0"><img src="https://cdn.shopify.com/s/files/1/2347/1879/files/delete_forever.png?v=1665585209" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;background-color:#ffffff">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:24px;color:#000000;font-size:16px;font-weight:700;padding-bottom:5px;padding-top:22px">
-                                                                        Non rimuovere la eSIM</p>
-                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:24px;color:#000000;font-size:16px;font-weight:400">Puoi scansionare il codice solo una volta. Se elimini la eSIM, non potrai recuperarla.</p>
+                                                                        Ne supprimez pas l'eSIM</p>
+                                                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:24px;color:#000000;font-size:16px;font-weight:400">
+                                                                        Vous ne pouvez scanner le code qu'une seule fois. Si vous supprimez l'eSIM, vous ne pourrez pas la récupérer.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -1041,9 +1042,9 @@
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0"><img src="https://cdn.shopify.com/s/files/1/2347/1879/files/public.png?v=1665585209" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;background-color:#ffffff">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:24px;color:#000000;font-size:16px;font-weight:700;padding-bottom:6px;padding-top:19px">
-                                                                        Attiva il Roaming dati</p>
+                                                                        Activez l'itinérance des données</p>
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:#000000;font-size:16px;font-weight:400">
-                                                                        Puoi attivare questa opzione da Impostazioni per far funzionare la tua eSIM.</p>
+                                                                        Vous pouvez activer cette option depuis les Paramètres afin que votre eSIM fonctionne.</p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -1094,11 +1095,11 @@
                                                             <tr>
                                                                 <td align="center" style="padding:0;Margin:0">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:28px;color:black;font-size:22px;font-weight:700;padding-bottom:24px">
-                                                                        Hai bisogno di aiuto?</p>
+                                                                        Besoin d'aide ?</p>
                                                                     <p style="Margin:0 auto;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:21px;color:black;font-size:16px;text-align:center;font-weight:400;width:80%;padding-bottom:24px;max-width:480px">
-                                                                        Beh, noi siamo qui per te! Comprendiamo che questo processo non è semplice. Se hai bisogno di aiuto, contattaci nella nostra <a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#000000;font-size:16px;font-weight:bold"
-                                                                            href="https://wa.me/message/26QNKY6DJF6PI1" target="_blank"> Chat online</a> or check o controlla il nostro <a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#000000;font-size:16px;font-weight:bold"
-                                                                            href="https://esim.holafly.com/it/faq/" target="_blank">Centro Assistenza</a>.</p>
+                                                                        Nous sommes là pour vous ! Nous comprenons que ce processus n'est pas simple. Si vous avez besoin d'aide, contactez-nous en utilisant notre <a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#000000;font-size:16px;font-weight:bold"
+                                                                            href="https://wa.me/message/26QNKY6DJF6PI1" target="_blank">chat en ligne</a> ou consultez <a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#000000;font-size:16px;font-weight:bold"
+                                                                            href="https://esim.holafly.com/faq/" target="_blank"> Centre d'assistance</a>.</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1130,10 +1131,10 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="es-footer" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">
+                    <table class="es-header" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">
                         <tr>
                             <td class="es-m-p15r es-m-p15l" align="center" style="padding:0;Margin:0">
-                                <table class="es-footer-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;background-color:transparent;max-width:660px">
+                                <table class="es-header-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;background-color:transparent;max-width:660px">
                                     <tr>
                                         <td align="center" bgcolor="#ffffff" style="padding:48px 40px;Margin:0;background-color:#ffffff;border-radius:20px;border-style:solid;border-width:1px;border-color:#E1E1E3">
                                             <!--[if mso]><table style="width:660px" cellpadding="0" cellspacing="0"><tr><td style="width:310px" valign="top"><![endif]-->
@@ -1174,14 +1175,15 @@
                                                             <tr>
                                                                 <td align="left" style="padding:0;Margin:0">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:24px;color:#000000;font-size:20px;font-weight:700;padding-bottom:22px">
-                                                                        Contattaci</p>
+                                                                        Contactez-nous</p>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td align="left" style="padding:0;Margin:0">
                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'Mulish', sans-serif;line-height:23px;color:#8A9099;font-size:15px;font-weight:400;padding-bottom:15px">
-                                                                        Per un'assistenza più rapida, accedi alla nostra Chat Online:<br><a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#7E7E86;font-size:15px;font-weight:700"
-                                                                        href="https://esim.holafly.com/it/?open_chat=true" target="_blank" rel="noopener noreferrer">esim.holafly.com</a></p>
+                                                                        Pour une prise en charge plus rapide, rendez-vous
+                                                                        sur notre chat en ligne: <a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#7E7E86;font-size:15px;font-weight:700"
+                                                                        href="https://esim.holafly.com/fr/?open_chat=true" target="_blank" rel="noopener noreferrer">esim.holafly.com</a></p>
                                                                     <a href="https://wa.me/message/26QNKY6DJF6PI1" target="_blank" style="-webkit-text-size-adjust:none; display:inline-block;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-style: normal;font-weight: 500;text-decoration:none;color:#fff;font-size:15px;vertical-align:middle;line-height:0px;background-color:#03C302;padding:5px 8px 5px 12px; border-radius:14px;max-width:240px;">
                                                                         <table>
                                                                             <tbody>
